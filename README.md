@@ -1,1 +1,57 @@
-¨¥yÛhr·šµë-­æ¦}Ó©z¶­Š‰ç¢Ú^®h­µçEj)^vÚ­æ­zËky©Ÿtê^­«b¢yè¶—«š+myÑZŠW¶‡+y«^²ÚÞjgÝ:—«jØ¨žz-¥êæŠÛ^tŒÅÕ…±ÑÕÉ¸É•¥ÍÑÉäÍÑ…¥¹œ((ø€¨©9=8µAI=UQ%=8¸¨¨Q¡¥ÌÉ•Á½Í¥Ñ½Éä•á¥ÍÑÌÑ¼Ñ•ÍÐÅÕ…±ÑÕÉ¸ÌÍÑ…¹‘…Éµ­•äQU(øÁÕ‰±¥…Ñ¥½¸…¹IÕÍÐµ±¥•¹ÐÙ•É¥™¥…Ñ¥½¸Á…Ñ ¸%ÑÌÉ½½Ð°µ•Ñ…‘…Ñ„°Ñ…É•Ð…¹ÑÉÕÍÐ(ø‰½½ÑÍÑÉ…À…É”‘¥ÍÁ½Í…‰±”¥¹Ñ•É½Á•É…‰¥±¥Ñä™¥áÑÕÉ•Ì¸9½Ñ¡¥¹œ¡•É”¥Ì…¸…ÕÑ¡½É¥Ñ…Ñ¥Ù”(øÅÕ…±ÑÕÉ¸É•±•…Í”½ÈÁÉ½‘ÕÑ¥½¸ÑÉÕÍÐ…¹¡½È¸()Q¡”ÍÑ…¥¹œÉ•Á½Í¥Ñ½Éä¥ÌÁÕ‰±¥Í¡•…Ð(ñ¡ÑÑÁÌè¼½Ù½±‘¥½…‘”¹¥Ñ¡Õˆ¹¥¼½•ÅÕ…±ÑÕÉ¸µÉ•¥ÍÑÉäµÍÑ…¥¹œ¼ø¸AÉ½‘ÕÑ¥½¸ÁÕ‰±¥…Ñ¥½¸¥Ì„)Í•Á…É…Ñ”É•Á½Í¥Ñ½Éä…¹É•µ…¥¹ÌÕ¹¥¹¥Ñ¥…±¥é•¸¼¹½ÐÉ•ÕÍ”Ñ¡”ÍÑ…¥¹œÉ½½Ð½È…¹ä)ÍÑ…¥¹œÍ¥¹•Èµ…Ñ•É¥…°¥¸„ÁÉ½‘ÕÑ¥½¸‰Õ¥±¸((ŒŒÕÉÉ•¹ÐÍ¹…ÁÍ¡½Ð((´M½ÕÉ”èY½±‘¥½…‘”½•ÅÕ…±ÑÕÉ¹€½µµ¥Ð˜àÉ‘„Äå”äÈÈÕŒàÝ‘‰ŒÉ„àÅ”Üå„ÁŒÌÌÀÝ”ÜàÝŒÝ‰€¸(´•Ñ•Éµ¥¹¥ÍÑ¥ŒÑ…É•ÐèÉ•¥ÍÑÉäµØÌ¹©Í½¹€°M!´ÈÔØ(€”Ù˜ÔÝ•„ÌÌäÔÅÙˆÝ„ÀÑ”Ý”ØÀå˜äàÅŒàÝŒÜÌÈäáˆÜäÈÍˆÑÕ„å„àÐÕ…„ÀÉ„Á€¸(´QUÉ•Á½Í¥Ñ½ÉäÉ½½ÐèÙ•ÉÍ¥½¸€Ä°M!´ÈÔØ(€€ÜÄå”ÌÜÉ•ŒÜÅ”á˜ÔÀå˜ÔàÀÔààäÔØÀÌàÉÍÔäääÜÅˆàÈäÐÝ˜å‘„àÈÔÄÀÅ˜ÌÈÌÄÐÑ€¸(´5•Ñ…‘…Ñ„Ý…Ì•¹•É…Ñ•Ý¥Ñ ÕÁÍÑÉ•…´ÑÕ™Ñ½½±€€À¸ÄÜ¸ÀÕÍ¥¹œ½É‘¥¹…ÉäIMµAMLµM!ÈÔØ(€QU­•åÌ¸I½½Ð°Ñ…É•ÑÌ°Í¹…ÁÍ¡½Ð…¹Ñ¥µ•ÍÑ…µÀ•… ¡…Ù”„Í•Á…É…Ñ”€ÌÀÜÈµ‰¥Ð­•ä…¹(€„Ñ¡É•Í¡½±½˜½¹”¸QUÉ½±”Í•Á…É…Ñ¥½¸…¹•áÁ¥É…Ñ¥½¸…É”•á•É¥Í•¡•É”ìÑ¡¥Ì(€Í¥¹±”µµ…¥¹Ñ…¥¹•ÈÍÑ…¥¹œÍ•ÑÕÀ¥Ì¹½Ð„ÁÉ½‘ÕÑ¥½¸ÕÍÑ½‘äµ½‘•°¸(´I½½Ð•áÁ¥É•Ì€Ää=Ñ½‰•È€ÈÀÈÜìÑ…É•ÑÌ…¹Í¹…ÁÍ¡½Ð•áÁ¥É”…™Ñ•È€äÀ‘…åÌìÑ¥µ•ÍÑ…µÀ(€•áÁ¥É•Ì…™Ñ•È€ÌÀ‘…åÌ¸±¥•¹ÑÌµÕÍÐÉ•©•Ð•áÁ¥É•µ•Ñ…‘…Ñ„¸()Q¡”É½½Ð™¥¹•ÉÁÉ¥¹ÐµÕÍÐ‰”½‰Ñ…¥¹•¥¹‘•Á•¹‘•¹Ñ±ä™É½´Ñ¡”ÁÕ‰±¥Í¡•É•Á½Í¥Ñ½Éä¸%Ð)¥Ì¹½ÐÍ…™”Ñ¼‰½½ÑÍÑÉ…ÀÑÉÕÍÐ‰ä‘½Ý¹±½…‘¥¹œÉ½½Ð¹©Í½¹€…¹¥ÑÌ™¥¹•ÉÁÉ¥¹Ð™É½´Ñ¡¥Ì)Í…µ”•¹‘Á½¥¹Ð¸ÅÕ…±ÑÕÉ¸ÌÁÉ½‘ÕÑ¥½¸±¥•¹Ð‘½•Ì¹½Ð•µ‰•½ÈÑÉÕÍÐÑ¡¥ÌÍÑ…¥¹œÉ½½Ð¸((ŒŒM¥¹¥¹œ…¹ÁÕ‰±¥…Ñ¥½¸()AÉ¥Ù…Ñ”ÍÑ…¥¹œ­•åÌ…É”¹•Ù•È½µµ¥ÑÑ•¸Q¡”½¹”µÑ¥µ”­•åÌ™½ÈÑ¡¥Ì¥¹Ñ•É½Á•É…‰¥±¥Ñä)Í¹…ÁÍ¡½Ð…É”­•ÁÐ½ÕÑÍ¥‘”Ñ¡”É•Á½Í¥Ñ½Éä‘ÕÉ¥¹œÑ¡”Í¥¹¥¹œ½Á•É…Ñ¥½¸…¹…É”¹½Ð„)‘ÕÉ…‰±”ÍÑ…¥¹œÕÍÑ½‘äÍ•Ð¸¼¹½ÐÑÉ•…ÐÑ¡¥ÌÍ¹…ÁÍ¡½Ð…Ìµ…¥¹Ñ…¥¹…‰±”…™Ñ•È¥ÑÌ)µ•Ñ…‘…Ñ„•áÁ¥É•Ì¸™ÕÑÕÉ”ÍÑ…¥¹œÁÕ‰±¥…Ñ¥½¸É•ÅÕ¥É•Ì„¹•Ü•áÁ±¥¥ÐÍ¥¹•È…¹É½½Ð)ÕÍÑ½‘ä‘•¥Í¥½¸°™½±±½Ý•‰ä¥¹‘•Á•¹‘•¹ÐÉ½½Ð‘¥ÍÑÉ¥‰ÕÑ¥½¸¸()Q¡”™½Éµ•ÈQUµ½¸µ$M¥ÍÑ½É”½=%Í¥¹•ÈÝ…ÌÉ•µ½Ù•™É½´Ñ¡¥ÌÍÑ…¥¹œÉ•Á½Í¥Ñ½Éä)‰•…ÕÍ”¥Ð•µ¥ÑÑ•‘É…™ÐQ@´Äà­•åÌÑ¡…ÐÅÕ…±ÑÕÉ¸ÌÍ•±•Ñ•IÕÍÐQUÙ•É¥™¥•È‘½•Ì)¹½ÐÍÕÁÁ½ÉÐ¸Q¡”½±=%µ•Ñ…‘…Ñ„…¹Í¥¹…ÑÕÉ•ÌÉ•µ…¥¸¥¸ÁÕ‰±¥Œ¥Ð¡¥ÍÑ½Éä¸Q¡”)É•µ…¥¹¥¹œQUµ½¸µ$A…•ÌÝ½É­™±½Ü¥Ìµ…¹Õ…±±ä‘¥ÍÁ…Ñ¡•…™Ñ•ÈÉ•Ù¥•Ý•µ•Ñ…‘…Ñ„¥Ì)½µµ¥ÑÑ•¸9¼Í¡•‘Õ±•½È…ÕÑ½µ…Ñ¥ŒÍ¥¹¥¹œÝ½É­™±½Ü¥Ì•¹…‰±•¸((ŒŒ	½Õ¹‘…É¥•Ì((´MÑ…¥¹œµ•Ñ…‘…Ñ„¥Ì½¹±ä…¸¥¹Ñ•É½Á•É…‰¥±¥Ñä™¥áÑÕÉ”ì¥Ð¥Ì¹•Ù•ÈÁÉ½‘ÕÑ¥½¸ÑÉÕÍÐ¸(´QUÁÉ½Ù•ÌÑ¡…Ðµ•Ñ…‘…Ñ„…¹Ñ¡”Ñ…É•ÐÝ•É”…ÕÑ¡½É¥é•‰äÑ¡”½¹™¥ÕÉ•ÍÑ…¥¹œ(€É½½Ð¸%Ð‘½•Ì¹½Ð•ÍÑ…‰±¥Í Ñ¡…ÐÉ•¥ÍÑÉä¥¹‘¥…Ñ½ÉÌ…É”…ÕÉ…Ñ”½ÈÍ…™”Ñ¼•¹™½É”¸(´Q¡”É•¥ÍÑÉä¥ÌÉ•Í•…É ‘…Ñ„°¹½Ð•á•ÕÑ…‰±”Á½±¥ä¸ÅÕ…±ÑÕÉ¸¡…Ì¹¼$•¹™½É•µ•¹Ð(€½¹¹•Ñ•Ñ¼Ñ¡¥ÌÑ…É•Ð¸(´¼¹½ÐÁÕ‰±¥Í Á…ÉÑ¥¥Á…¹Ð½Í•ÍÍ¥½¸•Ù¥‘•¹”°±½…°Á…Ñ¡Ì°ÕÍ•É¹…µ•Ì°µ…¡¥¹”(€¥‘•¹Ñ¥™¥•ÉÌ°ÁÉ½‘ÕÑ¥½¸É•‘•¹Ñ¥…±Ì°½ÈÁÉ¥Ù…Ñ”Í¥¹¥¹œµ…Ñ•É¥…°¡•É”¸()M•”Ñ¡”mÅÕ…±ÑÕÉ¸É•¥ÍÑÉäÁÕ‰±¥…Ñ¥½¸ÍÑ…ÑÕÍt¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½Y½±‘¥½…‘”½•ÅÕ…±ÑÕÉ¸½‰±½ˆ½µ…¥¸½‘½Ì½É•¥ÍÑÉäµÁÕ‰±¥…Ñ¥½¸µÍÑ…ÑÕÌ¹µ¤)…¹mÉ•¥ÍÑÉäÑÉÕÍÐ‘•Í¥¹t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½Y½±‘¥½…‘”½•ÅÕ…±ÑÕÉ¸½‰±½ˆ½µ…¥¸½‘½Ì½É•¥ÍÑÉäµÑÉÕÍÐ¹µ¤)™½È¥µÁ±•µ•¹Ñ…Ñ¥½¸ÍÑ…ÑÕÌ…¹ÁÉ½‘ÕÑ¥½¸…Ñ•Ì¸
+# Equalturn registry staging
+
+> **NON-PRODUCTION.** This repository exists to test Equalturn's standard-key TUF
+> publication and Rust-client verification path. Its root, metadata, target and trust
+> bootstrap are disposable interoperability fixtures. Nothing here is an authoritative
+> Equalturn release or production trust anchor.
+
+The staging repository is published at
+<https://voldigoade.github.io/equalturn-registry-staging/>. Production publication is a
+separate repository and remains uninitialized. Do not reuse the staging root or any
+staging signer material in a production build.
+
+## Current snapshot
+
+- Source: `Voldigoade/equalturn` commit `f82da19e9225c87dbc2a81e79a0cc3307e787c7b`.
+- Deterministic target: `registry-v3.json`, SHA-256
+  `e6ccf57eca33951cd6b7a04e7e609f981c87c73298b7923b4d5a9a845caa02a0`.
+- TUF repository root: version 1, SHA-256
+  `719e372ecc71e8f509f5805889560382d3d599971b82947f9da825101f323144`.
+- Metadata was generated with upstream `tuftool` 0.17.0 using ordinary RSA-PSS-SHA256
+  TUF keys. Root, targets, snapshot and timestamp each have a separate 3072-bit key and
+  a threshold of one. TUF role separation and expiration are exercised here; this
+  single-maintainer staging setup is not a production custody model.
+- Root expires 19 October 2027; targets and snapshot expire after 90 days; timestamp
+  expires after 30 days. Clients must reject expired metadata.
+
+The root fingerprint must be obtained independently from the published repository. It
+is not safe to bootstrap trust by downloading `root.json` and its fingerprint from this
+same endpoint. Equalturn's production client does not embed or trust this staging root.
+
+## Signing and publication
+
+Private staging keys are never committed. The one-time keys for this interoperability
+snapshot are kept outside the repository during the signing operation and are not a
+durable staging custody set. Do not treat this snapshot as maintainable after its
+metadata expires. A future staging publication requires a new explicit signer and root
+custody decision, followed by independent root distribution.
+
+The former TUF-on-CI Sigstore/OIDC signer was removed from this staging repository
+because it emitted draft TAP-18 keys that Equalturn's selected Rust TUF verifier does
+not support. The old OIDC metadata and signatures remain in public Git history. The
+remaining TUF-on-CI Pages workflow is manually dispatched after reviewed metadata is
+committed. No scheduled or automatic signing workflow is enabled.
+
+## Boundaries
+
+- Staging metadata is only an interoperability fixture; it is never production trust.
+- TUF proves that metadata and the target were authorized by the configured staging
+  root. It does not establish that registry indicators are accurate or safe to enforce.
+- The registry is research data, not executable policy. Equalturn has no AI enforcement
+  connected to this target.
+- Do not publish participant/session evidence, local paths, usernames, machine
+  identifiers, production credentials, or private signing material here.
+
+See the [Equalturn registry publication status](https://github.com/Voldigoade/equalturn/blob/main/docs/registry-publication-status.md)
+and [registry trust design](https://github.com/Voldigoade/equalturn/blob/main/docs/registry-trust.md)
+for implementation status and production gates.
