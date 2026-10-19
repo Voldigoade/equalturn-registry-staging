@@ -1,0 +1,58 @@
+name: Publish standard-key TUF staging repository
+
+on:
+  push:
+    branches: [static-tuf-publish]
+    paths:
+      - .nojekyll
+      - index.html
+      - metadata/**
+      - targets/**
+
+permissions: {}
+
+concurrency:
+  group: staging-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out the fixed staging publication branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: static-tuf-publish
+          persist-credentials: false
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+
+      - name: Package the public staging repository
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: .
+
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the staging repository
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+  verify-publication:
+    needs: deploy
+    permissions: {}
+    uses: ./.github/workflows/test.yml
