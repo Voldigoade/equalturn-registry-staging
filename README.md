@@ -1,35 +1,1 @@
-# Equalturn registry staging
-
-> **NON-PRODUCTION STAGING REPOSITORY.** This repository exists only to exercise the
-> TUF-on-CI publication and Equalturn client verification path. Its metadata, targets,
-> signer configuration, and root trust are disposable test material. Nothing published
-> here is an authoritative Equalturn registry release.
-
-This repository was created from the [TUF-on-CI template](https://github.com/theupdateframework/tuf-on-ci-template)
-and retains the upstream TUF-on-CI workflows. Publication uses a separate GitHub Pages
-site at <https://voldigoade.github.io/equalturn-registry-staging/>. Equalturn's
-production repository and trust root are separate and remain uninitialized until the
-offline production signer ceremony documented in
-[Equalturn](https://github.com/Voldigoade/equalturn).
-
-## Staging boundaries
-
-- Never reuse staging keys, roots, metadata, or target signatures in a production build.
-- Do not store or publish production credentials, user/session evidence, or private
-  signing material in this repository.
-- TUF signatures prove that staging metadata was authorized by the staging root; they
-  do not establish that a registry indicator is accurate or safe to enforce.
-- Staging publication is for interoperability and release-flow testing only. It does
-  not authorize endpoint enforcement.
-
-The workflows remain pinned to reviewed upstream action commits and use job-scoped
-permissions. GitHub Actions' repository-level default token permission is read-only;
-its narrowly scoped ability to create pull requests is enabled here solely for the
-upstream TUF signing-event workflow. The Pages environment only accepts the `publish`
-branch, following the upstream TUF-on-CI setup procedure.
-
-## Status
-
-Repository setup is in progress. No production trust material is present. See the
-[Equalturn registry publication status](https://github.com/Voldigoade/equalturn/blob/main/docs/registry-publication-status.md)
-for the current integration status.
+¨¥yÛhr·šµë-­æ¦}Ó©z¶­Š‰ç¢Ú^®h­µçEj)^vÚ­æ­zËky©Ÿtê^­«b¢yè¶—«š+myÑZŠW¶‡+y«^²ÚÞjgÝ:—«jØ¨žz-¥êæŠÛ^tŒÅÕ…±ÑÕÉ¸É•¥ÍÑÉäÍÑ…¥¹œ((ø€¨©9=8µAI=UQ%=8¸¨¨Q¡¥ÌÉ•Á½Í¥Ñ½Éä•á¥ÍÑÌÑ¼Ñ•ÍÐÅÕ…±ÑÕÉ¸ÌÍÑ…¹‘…Éµ­•äQU(øÁÕ‰±¥…Ñ¥½¸…¹IÕÍÐµ±¥•¹ÐÙ•É¥™¥…Ñ¥½¸Á…Ñ ¸%ÑÌÉ½½Ð°µ•Ñ…‘…Ñ„°Ñ…É•Ð…¹ÑÉÕÍÐ(ø‰½½ÑÍÑÉ…À…É”‘¥ÍÁ½Í…‰±”¥¹Ñ•É½Á•É…‰¥±¥Ñä™¥áÑÕÉ•Ì¸9½Ñ¡¥¹œ¡•É”¥Ì…¸…ÕÑ¡½É¥Ñ…Ñ¥Ù”(øÅÕ…±ÑÕÉ¸É•±•…Í”½ÈÁÉ½‘ÕÑ¥½¸ÑÉÕÍÐ…¹¡½È¸()Q¡”ÍÑ…¥¹œÉ•Á½Í¥Ñ½Éä¥ÌÁÕ‰±¥Í¡•…Ð(ñ¡ÑÑÁÌè¼½Ù½±‘¥½…‘”¹¥Ñ¡Õˆ¹¥¼½•ÅÕ…±ÑÕÉ¸µÉ•¥ÍÑÉäµÍÑ…¥¹œ¼ø¸AÉ½‘ÕÑ¥½¸ÁÕ‰±¥…Ñ¥½¸¥Ì„)Í•Á…É…Ñ”É•Á½Í¥Ñ½Éä…¹É•µ…¥¹ÌÕ¹¥¹¥Ñ¥…±¥é•¸¼¹½ÐÉ•ÕÍ”Ñ¡”ÍÑ…¥¹œÉ½½Ð½È…¹ä)ÍÑ…¥¹œÍ¥¹•Èµ…Ñ•É¥…°¥¸„ÁÉ½‘ÕÑ¥½¸‰Õ¥±¸((ŒŒÕÉÉ•¹ÐÍ¹…ÁÍ¡½Ð((´M½ÕÉ”èY½±‘¥½…‘”½•ÅÕ…±ÑÕÉ¹€½µµ¥Ð˜àÉ‘„Äå”äÈÈÕŒàÝ‘‰ŒÉ„àÅ”Üå„ÁŒÌÌÀÝ”ÜàÝŒÝ‰€¸(´•Ñ•Éµ¥¹¥ÍÑ¥ŒÑ…É•ÐèÉ•¥ÍÑÉäµØÌ¹©Í½¹€°M!´ÈÔØ(€”Ù˜ÔÝ•„ÌÌäÔÅÙˆÝ„ÀÑ”Ý”ØÀå˜äàÅŒàÝŒÜÌÈäáˆÜäÈÍˆÑÕ„å„àÐÕ…„ÀÉ„Á€¸(´QUÉ•Á½Í¥Ñ½ÉäÉ½½ÐèÙ•ÉÍ¥½¸€Ä°M!´ÈÔØ(€€ÜÄå”ÌÜÉ•ŒÜÅ”á˜ÔÀå˜ÔàÀÔààäÔØÀÌàÉÍÔäääÜÅˆàÈäÐÝ˜å‘„àÈÔÄÀÅ˜ÌÈÌÄÐÑ€¸(´5•Ñ…‘…Ñ„Ý…Ì•¹•É…Ñ•Ý¥Ñ ÕÁÍÑÉ•…´ÑÕ™Ñ½½±€€À¸ÄÜ¸ÀÕÍ¥¹œ½É‘¥¹…ÉäIMµAMLµM!ÈÔØ(€QU­•åÌ¸I½½Ð°Ñ…É•ÑÌ°Í¹…ÁÍ¡½Ð…¹Ñ¥µ•ÍÑ…µÀ•… ¡…Ù”„Í•Á…É…Ñ”€ÌÀÜÈµ‰¥Ð­•ä…¹(€„Ñ¡É•Í¡½±½˜½¹”¸QUÉ½±”Í•Á…É…Ñ¥½¸…¹•áÁ¥É…Ñ¥½¸…É”•á•É¥Í•¡•É”ìÑ¡¥Ì(€Í¥¹±”µµ…¥¹Ñ…¥¹•ÈÍÑ…¥¹œÍ•ÑÕÀ¥Ì¹½Ð„ÁÉ½‘ÕÑ¥½¸ÕÍÑ½‘äµ½‘•°¸(´I½½Ð•áÁ¥É•Ì€Ää=Ñ½‰•È€ÈÀÈÜìÑ…É•ÑÌ…¹Í¹…ÁÍ¡½Ð•áÁ¥É”…™Ñ•È€äÀ‘…åÌìÑ¥µ•ÍÑ…µÀ(€•áÁ¥É•Ì…™Ñ•È€ÌÀ‘…åÌ¸±¥•¹ÑÌµÕÍÐÉ•©•Ð•áÁ¥É•µ•Ñ…‘…Ñ„¸()Q¡”É½½Ð™¥¹•ÉÁÉ¥¹ÐµÕÍÐ‰”½‰Ñ…¥¹•¥¹‘•Á•¹‘•¹Ñ±ä™É½´Ñ¡”ÁÕ‰±¥Í¡•É•Á½Í¥Ñ½Éä¸%Ð)¥Ì¹½ÐÍ…™”Ñ¼‰½½ÑÍÑÉ…ÀÑÉÕÍÐ‰ä‘½Ý¹±½…‘¥¹œÉ½½Ð¹©Í½¹€…¹¥ÑÌ™¥¹•ÉÁÉ¥¹Ð™É½´Ñ¡¥Ì)Í…µ”•¹‘Á½¥¹Ð¸ÅÕ…±ÑÕÉ¸ÌÁÉ½‘ÕÑ¥½¸±¥•¹Ð‘½•Ì¹½Ð•µ‰•½ÈÑÉÕÍÐÑ¡¥ÌÍÑ…¥¹œÉ½½Ð¸((ŒŒM¥¹¥¹œ…¹ÁÕ‰±¥…Ñ¥½¸()AÉ¥Ù…Ñ”ÍÑ…¥¹œ­•åÌ…É”¹•Ù•È½µµ¥ÑÑ•¸Q¡”½¹”µÑ¥µ”­•åÌ™½ÈÑ¡¥Ì¥¹Ñ•É½Á•É…‰¥±¥Ñä)Í¹…ÁÍ¡½Ð…É”­•ÁÐ½ÕÑÍ¥‘”Ñ¡”É•Á½Í¥Ñ½Éä‘ÕÉ¥¹œÑ¡”Í¥¹¥¹œ½Á•É…Ñ¥½¸…¹…É”¹½Ð„)‘ÕÉ…‰±”ÍÑ…¥¹œÕÍÑ½‘äÍ•Ð¸¼¹½ÐÑÉ•…ÐÑ¡¥ÌÍ¹…ÁÍ¡½Ð…Ìµ…¥¹Ñ…¥¹…‰±”…™Ñ•È¥ÑÌ)µ•Ñ…‘…Ñ„•áÁ¥É•Ì¸™ÕÑÕÉ”ÍÑ…¥¹œÁÕ‰±¥…Ñ¥½¸É•ÅÕ¥É•Ì„¹•Ü•áÁ±¥¥ÐÍ¥¹•È…¹É½½Ð)ÕÍÑ½‘ä‘•¥Í¥½¸°™½±±½Ý•‰ä¥¹‘•Á•¹‘•¹ÐÉ½½Ð‘¥ÍÑÉ¥‰ÕÑ¥½¸¸()Q¡”™½Éµ•ÈQUµ½¸µ$M¥ÍÑ½É”½=%Í¥¹•ÈÝ…ÌÉ•µ½Ù•™É½´Ñ¡¥ÌÍÑ…¥¹œÉ•Á½Í¥Ñ½Éä)‰•…ÕÍ”¥Ð•µ¥ÑÑ•‘É…™ÐQ@´Äà­•åÌÑ¡…ÐÅÕ…±ÑÕÉ¸ÌÍ•±•Ñ•IÕÍÐQUÙ•É¥™¥•È‘½•Ì)¹½ÐÍÕÁÁ½ÉÐ¸Q¡”½±=%µ•Ñ…‘…Ñ„…¹Í¥¹…ÑÕÉ•ÌÉ•µ…¥¸¥¸ÁÕ‰±¥Œ¥Ð¡¥ÍÑ½Éä¸Q¡”)É•µ…¥¹¥¹œQUµ½¸µ$A…•ÌÝ½É­™±½Ü¥Ìµ…¹Õ…±±ä‘¥ÍÁ…Ñ¡•…™Ñ•ÈÉ•Ù¥•Ý•µ•Ñ…‘…Ñ„¥Ì)½µµ¥ÑÑ•¸9¼Í¡•‘Õ±•½È…ÕÑ½µ…Ñ¥ŒÍ¥¹¥¹œÝ½É­™±½Ü¥Ì•¹…‰±•¸((ŒŒ	½Õ¹‘…É¥•Ì((´MÑ…¥¹œµ•Ñ…‘…Ñ„¥Ì½¹±ä…¸¥¹Ñ•É½Á•É…‰¥±¥Ñä™¥áÑÕÉ”ì¥Ð¥Ì¹•Ù•ÈÁÉ½‘ÕÑ¥½¸ÑÉÕÍÐ¸(´QUÁÉ½Ù•ÌÑ¡…Ðµ•Ñ…‘…Ñ„…¹Ñ¡”Ñ…É•ÐÝ•É”…ÕÑ¡½É¥é•‰äÑ¡”½¹™¥ÕÉ•ÍÑ…¥¹œ(€É½½Ð¸%Ð‘½•Ì¹½Ð•ÍÑ…‰±¥Í Ñ¡…ÐÉ•¥ÍÑÉä¥¹‘¥…Ñ½ÉÌ…É”…ÕÉ…Ñ”½ÈÍ…™”Ñ¼•¹™½É”¸(´Q¡”É•¥ÍÑÉä¥ÌÉ•Í•…É ‘…Ñ„°¹½Ð•á•ÕÑ…‰±”Á½±¥ä¸ÅÕ…±ÑÕÉ¸¡…Ì¹¼$•¹™½É•µ•¹Ð(€½¹¹•Ñ•Ñ¼Ñ¡¥ÌÑ…É•Ð¸(´¼¹½ÐÁÕ‰±¥Í Á…ÉÑ¥¥Á…¹Ð½Í•ÍÍ¥½¸•Ù¥‘•¹”°±½…°Á…Ñ¡Ì°ÕÍ•É¹…µ•Ì°µ…¡¥¹”(€¥‘•¹Ñ¥™¥•ÉÌ°ÁÉ½‘ÕÑ¥½¸É•‘•¹Ñ¥…±Ì°½ÈÁÉ¥Ù…Ñ”Í¥¹¥¹œµ…Ñ•É¥…°¡•É”¸()M•”Ñ¡”mÅÕ…±ÑÕÉ¸É•¥ÍÑÉäÁÕ‰±¥…Ñ¥½¸ÍÑ…ÑÕÍt¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½Y½±‘¥½…‘”½•ÅÕ…±ÑÕÉ¸½‰±½ˆ½µ…¥¸½‘½Ì½É•¥ÍÑÉäµÁÕ‰±¥…Ñ¥½¸µÍÑ…ÑÕÌ¹µ¤)…¹mÉ•¥ÍÑÉäÑÉÕÍÐ‘•Í¥¹t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½Y½±‘¥½…‘”½•ÅÕ…±ÑÕÉ¸½‰±½ˆ½µ…¥¸½‘½Ì½É•¥ÍÑÉäµÑÉÕÍÐ¹µ¤)™½È¥µÁ±•µ•¹Ñ…Ñ¥½¸ÍÑ…ÑÕÌ…¹ÁÉ½‘ÕÑ¥½¸…Ñ•Ì¸
