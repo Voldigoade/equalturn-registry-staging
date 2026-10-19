@@ -1,57 +1,58 @@
-name: TUF-on-CI publish
+name: Publish standard-key TUF staging repository
+
+on:
+  push:
+    branches: [static-tuf-publish]
+    paths:
+      - .nojekyll
+      - index.html
+      - metadata/**
+      - targets/**
 
 permissions: {}
 
-on:
-  workflow_dispatch:
-    inputs:
-      ref:
-        type: string
-        required: false
+concurrency:
+  group: staging-pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: read
-    runs-on: ubuntu-latest
+      pages: read
     steps:
-      - id: build-and-upload-repository
-        uses: theupdateframework/tuf-on-ci/actions/upload-repository@662382a8295b89a9d538390ce8b9bb85b207a93d # v0.21.0
+      - name: Check out the fixed staging publication branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          gh_pages: true
-          ref: ${{ inputs.ref }}
+          ref: static-tuf-publish
+          persist-credentials: false
 
-  deploy-to-pages:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+
+      - name: Package the public staging repository
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: .
+
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: build
     permissions:
       pages: write
-      id-token: write # for authenticating to GH Pages
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy TUF-on-CI repository to GitHub Pages
+      - name: Deploy the staging repository
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
 
-  test-deployed-repository:
-    needs: deploy-to-pages
-    permissions:
-      contents: read # for checking out the repository
-      issues: write # for modifying Issues
+  verify-publication:
+    needs: deploy
+    permissions: {}
     uses: ./.github/workflows/test.yml
-
-  update-issue:
-    runs-on: ubuntu-latest
-    needs: [build, deploy-to-pages, test-deployed-repository]
-    if: always() && !cancelled()
-    permissions:
-      issues: write # for modifying Issues
-      contents: read # for checking out the repository
-    steps:
-      - name: Update the issue for the workflow
-        uses: theupdateframework/tuf-on-ci/actions/update-issue@662382a8295b89a9d538390ce8b9bb85b207a93d # v0.21.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          success: ${{ !contains(needs.*.result, 'failure') }}
