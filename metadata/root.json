@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "1996aa2e9800075ed4ac8bf0f7286e9d453b9c15c5d26691bb1ed64cb05a7cf6",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2027-01-17T20:45:28Z",
+  "keys": {
+   "1996aa2e9800075ed4ac8bf0f7286e9d453b9c15c5d26691bb1ed64cb05a7cf6": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "245930475+Voldigoade@users.noreply.github.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@voldigoade"
+   },
+   "eed970e7c1c388585c1abb70e9d0198e948845372fea1fbeec3d31065d7b8920": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/Voldigoade/equalturn-registry-staging/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "1996aa2e9800075ed4ac8bf0f7286e9d453b9c15c5d26691bb1ed64cb05a7cf6"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "eed970e7c1c388585c1abb70e9d0198e948845372fea1fbeec3d31065d7b8920"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 30,
+    "x-tuf-on-ci-signing-period": 10
+   },
+   "targets": {
+    "keyids": [
+     "1996aa2e9800075ed4ac8bf0f7286e9d453b9c15c5d26691bb1ed64cb05a7cf6"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "eed970e7c1c388585c1abb70e9d0198e948845372fea1fbeec3d31065d7b8920"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 7,
+    "x-tuf-on-ci-signing-period": 2
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 90,
+  "x-tuf-on-ci-signing-period": 30
+ }
+}
