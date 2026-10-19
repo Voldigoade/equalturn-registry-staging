@@ -1,0 +1,5348 @@
+{
+  "entries": [
+    {
+      "categories": [
+        "multimodal"
+      ],
+      "id": "adobe-firefly",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`firefly.adobe.com` product host; Firefly features are also embedded in Creative Cloud.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Adobe Firefly product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "firefly.adobe.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Firefly",
+      "provider": {
+        "id": "adobe",
+        "name": "Adobe"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`firefly.adobe.com` product host; Firefly features are also embedded in Creative Cloud.",
+          "url": "https://firefly.adobe.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "ai21-labs-jamba-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.ai21.com` documented; account/private deployment variants need separate evidence.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented AI21 API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.ai21.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Jamba API",
+      "provider": {
+        "id": "ai21-labs",
+        "name": "AI21 Labs"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.ai21.com` documented; account/private deployment variants need separate evidence.",
+          "url": "https://docs.ai21.com/reference"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "router"
+      ],
+      "id": "aider-aider",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "pypi",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "An installed distribution does not prove invocation; Python environments, source installs, renamed entry points, and configured providers vary.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Aider CLI PyPI distribution",
+          "source_id": "source-2",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "aider-chat",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Aider",
+      "provider": {
+        "id": "aider",
+        "name": "Aider"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Supports many providers and local endpoints; no fixed provider/domain indicator.",
+          "url": "https://aider.chat/docs/"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Aider installation documentation names the PyPI distribution `aider-chat` and documents isolated environment installation.",
+          "url": "https://aider.chat/docs/install.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "router",
+        "security_tool",
+        "self_hosted_stack"
+      ],
+      "id": "alias-robotics-cai-framework-archived",
+      "indicators": [],
+      "product": "CAI framework (archived)",
+      "provider": {
+        "id": "alias-robotics",
+        "name": "Alias Robotics"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Archived project; do not treat as active. It accepts configurable model APIs so no unique provider indicator.",
+          "url": "https://github.com/aliasrobotics/cai"
+        }
+      ],
+      "status": "archived",
+      "surfaces": [
+        "cli",
+        "local_runtime"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api",
+        "regional_provider"
+      ],
+      "id": "alibaba-cloud-qwen-model-studio-dashscope",
+      "indicators": [],
+      "product": "Qwen / Model Studio (DashScope)",
+      "provider": {
+        "id": "alibaba-cloud",
+        "name": "Alibaba Cloud"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Region- and workspace-specific hosts; wildcard suffixes would be broad and account-dependent.",
+          "url": "https://help.aliyun.com/en/model-studio/base-url"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal"
+      ],
+      "id": "alibaba-qwen-chat",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`chat.qwen.ai` exact host; Alibaba also offers regional cloud APIs.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Qwen Chat product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "chat.qwen.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Qwen Chat",
+      "provider": {
+        "id": "alibaba",
+        "name": "Alibaba"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`chat.qwen.ai` exact host; Alibaba also offers regional cloud APIs.",
+          "url": "https://chat.qwen.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant"
+      ],
+      "id": "alibaba-qwen-code",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "npm",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Installation does not prove invocation; Qwen Code can connect to multiple configured providers and can run from a standalone distribution.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Official Qwen Code npm package",
+          "source_id": "source-2",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "@qwen-code/qwen-code",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Qwen Code",
+      "provider": {
+        "id": "alibaba",
+        "name": "Alibaba"
+      },
+      "relationships": [
+        {
+          "kind": "integrates_with",
+          "notes": "Qwen Code documents Alibaba Model Studio as a supported provider; provider selection is configurable.",
+          "target_id": "alibaba-cloud-qwen-model-studio-dashscope"
+        }
+      ],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Official project confirms CLI; provider behavior can depend on account/configuration.",
+          "url": "https://qwen.ai/qwencode"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Qwen Code upstream npm publication guide identifies the user-facing CLI distribution package.",
+          "url": "https://github.com/QwenLM/qwen-code/blob/main/docs/developers/development/npm.md"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "router"
+      ],
+      "id": "anomaly-opencode-opencode",
+      "indicators": [],
+      "product": "OpenCode",
+      "provider": {
+        "id": "anomaly-opencode",
+        "name": "Anomaly / OpenCode"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Provider selection and compatible endpoints are user-configurable.",
+          "url": "https://opencode.ai/docs/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "desktop",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "anthropic-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "Exact host `api.anthropic.com` documented.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Anthropic API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.anthropic.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Claude API",
+      "provider": {
+        "id": "anthropic",
+        "name": "Anthropic"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Exact host `api.anthropic.com` documented.",
+          "url": "https://platform.claude.com/docs/en/api/overview"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal"
+      ],
+      "id": "anthropic-claude",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`claude.ai` exact host; API and other clients are separate.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Claude web product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "claude.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Claude",
+      "provider": {
+        "id": "anthropic",
+        "name": "Anthropic"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`claude.ai` exact host; API and other clients are separate.",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "router"
+      ],
+      "id": "anysphere-cursor-agent-cli",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "medium",
+          "false_positive_risk": "medium",
+          "kind": "executable_name",
+          "lifecycle": "current",
+          "limitations": "`cursor-agent` is documented but rename/rebuild/custom endpoint bypasses process matching.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Cursor Agent CLI process/executable name",
+          "source_id": "source-1",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "cursor-agent",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Cursor Agent CLI",
+      "provider": {
+        "id": "anysphere",
+        "name": "Anysphere"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "The first-party CLI overview shows the `cursor-agent` command; rename/rebuild/custom endpoint bypasses process matching.",
+          "url": "https://docs.cursor.com/en/cli/overview"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner"
+      ],
+      "id": "apple-mlx-mlx-lm",
+      "indicators": [],
+      "product": "mlx-lm",
+      "provider": {
+        "id": "apple-mlx",
+        "name": "Apple MLX"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Library can be embedded in arbitrary processes; process/domain/port indicators are not reliable.",
+          "url": "https://github.com/ml-explore/mlx-lm"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_runtime",
+        "python_library"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "ide_assistant"
+      ],
+      "id": "aws-amazon-q-developer",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "current",
+          "limitations": "AWS announced IDE plugin support ends 30 April 2027; installation does not prove use, and other Amazon Q surfaces are not covered.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Amazon Q Developer VS Code Marketplace extension identifier",
+          "source_id": "source-2",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "amazonwebservices.amazon-q-vscode",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Amazon Q Developer",
+      "provider": {
+        "id": "aws",
+        "name": "AWS"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "AWS account/region and IDE surfaces vary; no single endpoint safely isolates Q usage. AWS Marketplace lists the IDE plugin and announces end of plugin support on 30 April 2027.",
+          "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "AWS Marketplace listing identifies the Amazon Q Developer IDE plugin and states plugin support ends 30 April 2027.",
+          "url": "https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.amazon-q-vscode"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "aws-bedrock-runtime-marketplace-models",
+      "indicators": [],
+      "product": "Bedrock Runtime / Marketplace models",
+      "provider": {
+        "id": "aws",
+        "name": "AWS"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Region/account endpoints vary and AWS service domains are shared.",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-marketplace.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "regional_provider"
+      ],
+      "id": "baidu-ernie-bot-wenxin-yiyan",
+      "indicators": [],
+      "product": "ERNIE Bot / Wenxin Yiyan",
+      "provider": {
+        "id": "baidu",
+        "name": "Baidu"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Baidu identifies ERNIE Bot as a conversational AI assistant; this company page does not establish a current app hostname.",
+          "url": "https://ir.baidu.com/baidu-general-business"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "The legacy yiyan.baidu.com URL redirected to wenxin.baidu.com; the target page was inaccessible to the checker, so current hostname evidence is weak and unstable.",
+          "url": "https://yiyan.baidu.com/"
+        }
+      ],
+      "status": "unknown",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "provider_api",
+        "regional_provider"
+      ],
+      "id": "baidu-qianfan-model-platform",
+      "indicators": [],
+      "product": "Qianfan model platform",
+      "provider": {
+        "id": "baidu",
+        "name": "Baidu"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Account/region-specific cloud endpoints; broad Baidu domains create unrelated-service matches.",
+          "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "berriai-litellm-proxy-ai-gateway",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "ecosystem": "pypi",
+          "false_positive_risk": "medium",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "LiteLLM is configurable routing software; package presence does not prove a proxy is running or that traffic contains AI requests.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "LiteLLM Python distribution name",
+          "source_id": "source-2",
+          "surfaces": [
+            "python_library",
+            "server"
+          ],
+          "value": "litellm",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "LiteLLM Proxy / AI Gateway",
+      "provider": {
+        "id": "berriai",
+        "name": "BerriAI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Deployment hostname and port are operator-configured; no static global indicator.",
+          "url": "https://docs.litellm.ai/docs/simple_proxy"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "LiteLLM official docs describe its Python distribution and `lite` proxy-management CLI.",
+          "url": "https://docs.litellm.ai/docs/proxy/management_cli"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "local_server"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "desktop_app",
+        "router"
+      ],
+      "id": "block-goose",
+      "indicators": [],
+      "product": "Goose",
+      "provider": {
+        "id": "block",
+        "name": "Block"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Multi-provider and local deployment support; no fixed endpoint or process signature.",
+          "url": "https://block.github.io/goose/docs/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "browser_extension",
+        "hosted_chat"
+      ],
+      "id": "brave-leo",
+      "indicators": [],
+      "product": "Leo",
+      "provider": {
+        "id": "brave",
+        "name": "Brave"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Built-in browser assistant; browser build/version and model selection vary.",
+          "url": "https://brave.com/leo/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "desktop_app",
+        "security_tool"
+      ],
+      "id": "burp-ai-dast",
+      "indicators": [],
+      "product": "Burp AI / Burp AT",
+      "provider": {
+        "id": "portswigger",
+        "name": "PortSwigger"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Burp AT is agentic AI for human-led pentesting; no standalone endpoint signature asserted.",
+          "url": "https://portswigger.net/burp/documentation/desktop/burp-at"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "regional_provider"
+      ],
+      "id": "bytedance-doubao",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "First-party product host is a candidate; localized app surfaces and API hosts differ.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "First-party Doubao web product host from the product URL",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "www.doubao.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Doubao",
+      "provider": {
+        "id": "bytedance",
+        "name": "ByteDance"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "First-party product host is a candidate; localized app surfaces and API hosts differ.",
+          "url": "https://www.doubao.com/chat/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "desktop_app",
+        "ide_assistant",
+        "router"
+      ],
+      "id": "bytedance-trae",
+      "indicators": [],
+      "product": "Trae",
+      "provider": {
+        "id": "bytedance",
+        "name": "ByteDance"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Product identity can be observable as an app, but no signed-package/process indicator is asserted here.",
+          "url": "https://www.trae.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal"
+      ],
+      "id": "canva-magic-studio",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`canva.com` is shared with non-AI design tools; broad host blocking has high false-positive risk.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Shared Canva design platform hostname containing Magic Studio",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "canva.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Magic Studio",
+      "provider": {
+        "id": "canva",
+        "name": "Canva"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`canva.com` is shared with non-AI design tools; broad host blocking has high false-positive risk.",
+          "url": "https://www.canva.com/magic-studio/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "cerebras-inference-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.cerebras.ai` documented; API requests can be routed through gateways.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Cerebras inference API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.cerebras.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Inference API",
+      "provider": {
+        "id": "cerebras",
+        "name": "Cerebras"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.cerebras.ai` documented; API requests can be routed through gateways.",
+          "url": "https://inference-docs.cerebras.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat"
+      ],
+      "id": "character-technologies-character-ai",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`character.ai` exact host; character roleplay and general assistant use share the service.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Character.AI product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "character.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Character.AI",
+      "provider": {
+        "id": "character-technologies",
+        "name": "Character Technologies"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`character.ai` exact host; character roleplay and general assistant use share the service.",
+          "url": "https://character.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "router"
+      ],
+      "id": "claude-code",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "npm",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Package can be removed, repackaged, or invoked from a different install; package presence does not prove use or identify remote requests.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Official npm package for Claude Code CLI",
+          "source_id": "source-2",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "@anthropic-ai/claude-code",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "current",
+          "limitations": "An extension ID establishes an installed marketplace identity only; VS Code profiles, forks, sideloading, and remote extension hosts can differ.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Official Claude Code VS Code extension identifier",
+          "source_id": "source-3",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "anthropic.claude-code",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Claude Code",
+      "provider": {
+        "id": "anthropic",
+        "name": "Anthropic"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Gateway and custom endpoint configuration documented; no single mandatory network route.",
+          "url": "https://docs.anthropic.com/en/docs/claude-code/overview"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Anthropic install guide documents the npm distribution name. Exact package identity indicates installation, not active use or provider routing.",
+          "url": "https://docs.anthropic.com/en/docs/claude-code/getting-started"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-3",
+          "indicator_assessment": "Official Visual Studio Marketplace listing identifies Anthropic Claude Code for VS Code.",
+          "url": "https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant",
+        "router"
+      ],
+      "id": "cline",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "current",
+          "limitations": "Cline supports local models and configurable providers; extension presence alone does not identify which model or provider is used.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Cline VS Code extension identifier",
+          "source_id": "source-2",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "saoudrizwan.claude-dev",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "VS Code agent",
+      "provider": {
+        "id": "cline",
+        "name": "Cline"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Provider and base URL are configurable; no fixed provider destination.",
+          "url": "https://github.com/cline/cline/blob/main/docs/sdk/model-providers.mdx"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "The official Marketplace page for Cline uses this publisher and extension identifier and describes the agent extension.",
+          "url": "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser_extension",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "router"
+      ],
+      "id": "cloudflare-ai-gateway",
+      "indicators": [],
+      "product": "AI Gateway",
+      "provider": {
+        "id": "cloudflare",
+        "name": "Cloudflare"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Account/gateway IDs appear in URLs under a shared Cloudflare host; host-only rule is broad.",
+          "url": "https://developers.cloudflare.com/ai-gateway/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "desktop_app",
+        "ide_assistant"
+      ],
+      "id": "cognition-windsurf-windsurf-editor-and-cascade",
+      "indicators": [],
+      "product": "Windsurf editor and Cascade",
+      "provider": {
+        "id": "cognition-windsurf",
+        "name": "Cognition / Windsurf"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "No verified exclusive process/domain indicator; product uses hosted services and integrations.",
+          "url": "https://docs.windsurf.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "cohere-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.cohere.ai` documented by compatibility API; private deployments can differ.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Cohere compatibility API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.cohere.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "API",
+      "provider": {
+        "id": "cohere",
+        "name": "Cohere"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.cohere.ai` documented by compatibility API; private deployments can differ.",
+          "url": "https://docs.cohere.com/v2/docs/compatibility-api"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "search_research"
+      ],
+      "id": "consensus-consensus",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`consensus.app` exact host; search/research features share the service.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Consensus product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "consensus.app",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Consensus",
+      "provider": {
+        "id": "consensus",
+        "name": "Consensus"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`consensus.app` exact host; search/research features share the service.",
+          "url": "https://consensus.app/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant",
+        "router"
+      ],
+      "id": "continue-continue-ide-assistant",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "current",
+          "limitations": "Continue supports configurable providers and local models; installation does not prove use or identify the selected backend.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Continue VS Code extension identifier",
+          "source_id": "source-2",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "continue.continue",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Continue IDE assistant",
+      "provider": {
+        "id": "continue",
+        "name": "Continue"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "User-configurable providers, local models, and `apiBase` make network indicator non-exclusive.",
+          "url": "https://docs.continue.dev/customize/overview"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Continue-maintained VS Code Marketplace listing identifies the extension and its agent, chat, edit, and autocomplete surfaces.",
+          "url": "https://marketplace.visualstudio.com/items/?itemName=Continue.continue"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "desktop_app",
+        "ide_assistant",
+        "router"
+      ],
+      "id": "cursor",
+      "indicators": [],
+      "product": "Cursor IDE",
+      "provider": {
+        "id": "anysphere",
+        "name": "Anysphere"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "BYOK/provider routing documented; no unique endpoint/process identifies model use.",
+          "url": "https://docs.cursor.com/settings/api-keys"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "provider_api"
+      ],
+      "id": "deepinfra-inference-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.deepinfra.com` documented by API references; model endpoint path varies.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented DeepInfra inference API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.deepinfra.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "inference API",
+      "provider": {
+        "id": "deepinfra",
+        "name": "DeepInfra"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.deepinfra.com` documented by API references; model endpoint path varies.",
+          "url": "https://docs.deepinfra.com/api-reference"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "deepseek-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.deepseek.com` documented; proxies and compatible gateways bypass this destination.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented DeepSeek API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.deepseek.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "API",
+      "provider": {
+        "id": "deepseek",
+        "name": "DeepSeek"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.deepseek.com` documented; proxies and compatible gateways bypass this destination.",
+          "url": "https://api-docs.deepseek.com/guides/responses_api/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal"
+      ],
+      "id": "deepseek-chat",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`chat.deepseek.com` exact host; does not cover API/gateway use.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted DeepSeek Chat product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "chat.deepseek.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Chat",
+      "provider": {
+        "id": "deepseek",
+        "name": "DeepSeek"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`chat.deepseek.com` exact host; does not cover API/gateway use.",
+          "url": "https://chat.deepseek.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "gateway",
+        "router"
+      ],
+      "id": "eden-ai-unified-ai-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.edenai.run` service host; multiple AI tasks share the API and model selection is per request.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Eden AI unified API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.edenai.run",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Unified AI API",
+      "provider": {
+        "id": "eden-ai",
+        "name": "Eden AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.edenai.run` service host; multiple AI tasks share the API and model selection is per request.",
+          "url": "https://docs.edenai.co/v3"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "elevenlabs-elevenlabs",
+      "indicators": [],
+      "product": "ElevenLabs",
+      "provider": {
+        "id": "elevenlabs",
+        "name": "ElevenLabs"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Product/API documentation exists; API hostname should be taken from current docs, not guessed from brand domain.",
+          "url": "https://elevenlabs.io/docs/overview"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "search_research"
+      ],
+      "id": "elicit-elicit",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`elicit.com` exact host; a product hostname does not identify exported or API-mediated use.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Elicit product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "elicit.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Elicit",
+      "provider": {
+        "id": "elicit",
+        "name": "Elicit"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`elicit.com` exact host; a product hostname does not identify exported or API-mediated use.",
+          "url": "https://elicit.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "fireworks-ai-inference-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.fireworks.ai` documented; multiple product APIs share the host.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Fireworks API hostname shared by multiple product APIs",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.fireworks.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "inference API",
+      "provider": {
+        "id": "fireworks-ai",
+        "name": "Fireworks AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.fireworks.ai` documented; multiple product APIs share the host.",
+          "url": "https://docs.fireworks.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal"
+      ],
+      "id": "gamma-gamma-ai",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`gamma.app` exact product host; presentation and document generation are not separable by hostname.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Gamma product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "gamma.app",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Gamma AI",
+      "provider": {
+        "id": "gamma",
+        "name": "Gamma"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`gamma.app` exact product host; presentation and document generation are not separable by hostname.",
+          "url": "https://gamma.app/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant"
+      ],
+      "id": "gemini-cli",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "npm",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Package identity indicates distribution, not invocation; binaries can be renamed, rebuilt, or run remotely.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Official Gemini CLI npm package",
+          "source_id": "source-2",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "@google/gemini-cli",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Gemini CLI",
+      "provider": {
+        "id": "google",
+        "name": "Google"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Official source confirms CLI surface; process metadata is mutable and no exclusive signature asserted.",
+          "url": "https://github.com/google-gemini/gemini-cli"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Google-maintained package manifest declares the published npm package name and CLI package.",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/cli/package.json"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner"
+      ],
+      "id": "ggml-org-llama-cpp-llama-server",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "container_image",
+          "lifecycle": "current",
+          "limitations": "Image references in local manifests do not prove a container is running; images may be mirrored, retagged, rebuilt, or referenced remotely.",
+          "platforms": [
+            "linux"
+          ],
+          "scope": "Published llama.cpp server OCI image reference",
+          "source_id": "source-3",
+          "surfaces": [
+            "server"
+          ],
+          "value": "ghcr.io/ggml-org/llama.cpp:server",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "executable_name",
+          "lifecycle": "current",
+          "limitations": "The executable can be renamed or rebuilt; server defaults are configurable and this name does not establish model use.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "llama.cpp inference server executable name",
+          "source_id": "source-1",
+          "surfaces": [
+            "local_runtime",
+            "server"
+          ],
+          "value": "llama-server",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "unsafe_to_block",
+          "bind_scope": "loopback",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "local_port",
+          "lifecycle": "current",
+          "limitations": "`llama-server` default `127.0.0.1:8080` documented; configurable and shared by unrelated apps.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented llama-server default local listener",
+          "source_id": "source-1",
+          "surfaces": [
+            "local_server"
+          ],
+          "value": "8080",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "llama.cpp / llama-server",
+      "provider": {
+        "id": "ggml-org",
+        "name": "ggml-org"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`llama-server` default `127.0.0.1:8080` documented; configurable and shared by unrelated apps. llama.cpp server documentation names the `llama-server` executable and describes configurable server behavior.",
+          "url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-3",
+          "indicator_assessment": "llama.cpp upstream Docker guide documents this server image tag and states that it contains `llama-server`.",
+          "url": "https://github.com/ggml-org/llama.cpp/blob/master/docs/docker.md"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_runtime",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant"
+      ],
+      "id": "github-copilot",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "current",
+          "limitations": "The extension can select multiple model/service features and is only one VS Code distribution surface; presence does not prove activity.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "GitHub Copilot VS Code extension identifier",
+          "source_id": "source-2",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "github.copilot",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "current",
+          "limitations": "VS Code versions and Visual Studio package surfaces differ; an extension ID indicates installation only, not use.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "GitHub Copilot Chat VS Code extension identifier",
+          "source_id": "source-3",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "github.copilot-chat",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Copilot IDE integrations",
+      "provider": {
+        "id": "github",
+        "name": "GitHub"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "No exclusive process/domain indicator asserted; editor and account infrastructure are shared.",
+          "url": "https://docs.github.com/en/copilot/get-started/where-to-use-github-copilot"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "GitHub Marketplace listing identifies the Copilot extension and describes inline AI coding suggestions.",
+          "url": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-3",
+          "indicator_assessment": "GitHub Marketplace listing identifies the Copilot Chat extension and its conversational and agent features.",
+          "url": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant"
+      ],
+      "id": "github-copilot-cli",
+      "indicators": [],
+      "product": "Copilot CLI",
+      "provider": {
+        "id": "github",
+        "name": "GitHub"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "No stable executable signature asserted; install method and binary name can change.",
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "google-ai-studio",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`aistudio.google.com` is a developer playground surface, not the only Gemini API route.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Google AI Studio developer playground hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "aistudio.google.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "AI Studio",
+      "provider": {
+        "id": "google",
+        "name": "Google"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`aistudio.google.com` is a developer playground surface, not the only Gemini API route.",
+          "url": "https://aistudio.google.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "google-cloud-vertex-ai-generative-models",
+      "indicators": [],
+      "product": "Vertex AI generative models",
+      "provider": {
+        "id": "google-cloud",
+        "name": "Google Cloud"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Regional/project endpoints are parameterized; no single exact host is safe as a global indicator.",
+          "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "search_research"
+      ],
+      "id": "google-gemini",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`gemini.google.com` exact host; shared Google services remain outside this match.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Gemini web product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "gemini.google.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Gemini",
+      "provider": {
+        "id": "google",
+        "name": "Google"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`gemini.google.com` exact host; shared Google services remain outside this match.",
+          "url": "https://gemini.google.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "google-gemini-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`generativelanguage.googleapis.com` documented; this does not cover Vertex or proxies.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Gemini Developer API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "generativelanguage.googleapis.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Gemini Developer API",
+      "provider": {
+        "id": "google",
+        "name": "Google"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`generativelanguage.googleapis.com` documented; this does not cover Vertex or proxies.",
+          "url": "https://ai.google.dev/gemini-api/docs/api-key"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant"
+      ],
+      "id": "google-gemini-code-assist",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "current",
+          "limitations": "Google offers other editor/cloud surfaces; an installed extension does not prove that it was used during a session.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Google Gemini Code Assist VS Code extension identifier",
+          "source_id": "source-1",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "google.geminicodeassist",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Gemini Code Assist for VS Code",
+      "provider": {
+        "id": "google",
+        "name": "Google"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Google Marketplace listing identifies the extension, its coding-assistant role, and VS Code surface.",
+          "url": "https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "search_research"
+      ],
+      "id": "google-notebooklm",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`notebooklm.google.com` exact app host; Google account infrastructure is shared.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted NotebookLM application hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "notebooklm.google.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "NotebookLM",
+      "provider": {
+        "id": "google",
+        "name": "Google"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`notebooklm.google.com` exact app host; Google account infrastructure is shared.",
+          "url": "https://notebooklm.google.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "groq-groqcloud-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "Exact API host `api.groq.com` and base path documented.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented GroqCloud API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.groq.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "GroqCloud API",
+      "provider": {
+        "id": "groq",
+        "name": "Groq"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Exact API host `api.groq.com` and base path documented.",
+          "url": "https://console.groq.com/docs/api-reference"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "router"
+      ],
+      "id": "helicone-ai-gateway",
+      "indicators": [],
+      "product": "AI Gateway",
+      "provider": {
+        "id": "helicone",
+        "name": "Helicone"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Gateway endpoint is configurable and may proxy provider traffic; observability and gateway products share a vendor.",
+          "url": "https://docs.helicone.ai/gateway/overview"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "hosted_chat"
+      ],
+      "id": "hugging-face-huggingchat",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "url_path",
+          "lifecycle": "current",
+          "limitations": "`huggingface.co` is shared with model hosting and other services; host-only match is broad.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "HuggingChat route on a shared Hugging Face host",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "https://huggingface.co/chat/",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "HuggingChat",
+      "provider": {
+        "id": "hugging-face",
+        "name": "Hugging Face"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`huggingface.co` is shared with model hosting and other services; host-only match is broad.",
+          "url": "https://huggingface.co/chat/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "gateway",
+        "router"
+      ],
+      "id": "hugging-face-inference-providers-router",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "Router endpoint `router.huggingface.co` is documented; Hugging Face hosts many unrelated services.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Hugging Face inference router hostname on a shared platform",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "router.huggingface.co",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Inference Providers / router",
+      "provider": {
+        "id": "hugging-face",
+        "name": "Hugging Face"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Router endpoint `router.huggingface.co` is documented; Hugging Face hosts many unrelated services.",
+          "url": "https://huggingface.co/docs/inference-providers/index"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "self_hosted_stack"
+      ],
+      "id": "hugging-face-text-generation-inference-tgi",
+      "indicators": [],
+      "product": "Text Generation Inference (TGI)",
+      "provider": {
+        "id": "hugging-face",
+        "name": "Hugging Face"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "The docs use port 8080 in configurable launch/consumer examples; this ubiquitous port alone does not identify TGI and is not retained as an indicator.",
+          "url": "https://huggingface.co/docs/text-generation-inference/basic_tutorials/consuming_tgi"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "desktop_app",
+        "inference_server",
+        "local_runner",
+        "router"
+      ],
+      "id": "jan-desktop-agent-and-local-api",
+      "indicators": [
+        {
+          "actionability": "unsafe_to_block",
+          "bind_scope": "loopback",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "local_port",
+          "lifecycle": "current",
+          "limitations": "Local server default `127.0.0.1:1337` documented; can route to configured remote providers too.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Jan default local API listener",
+          "source_id": "source-1",
+          "surfaces": [
+            "local_server"
+          ],
+          "value": "1337",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Desktop, Agent and local API",
+      "provider": {
+        "id": "jan",
+        "name": "Jan"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Local server default `127.0.0.1:1337` documented; can route to configured remote providers too.",
+          "url": "https://docs.jan.ai/desktop/api-server"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cli",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant",
+        "router"
+      ],
+      "id": "jetbrains-ai-assistant",
+      "indicators": [],
+      "product": "AI Assistant",
+      "provider": {
+        "id": "jetbrains",
+        "name": "JetBrains"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Supports third-party/local models and custom OpenAI-compatible endpoints.",
+          "url": "https://www.jetbrains.com/help/ai-assistant/use-custom-models.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant"
+      ],
+      "id": "jetbrains-junie",
+      "indicators": [],
+      "product": "Junie",
+      "provider": {
+        "id": "jetbrains",
+        "name": "JetBrains"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Integrated in JetBrains IDEs; no stable standalone process/network indicator.",
+          "url": "https://www.jetbrains.com/help/ai/jetbrains-ai.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "router"
+      ],
+      "id": "kilo-code-cli",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "npm",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Same configurable provider issue; package is `@kilocode/cli`, but package identity is only a weak local clue.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented npm package name; package identity is a weak local clue",
+          "source_id": "source-1",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "@kilocode/cli",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "CLI",
+      "provider": {
+        "id": "kilo-code",
+        "name": "Kilo Code"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Same configurable provider issue; package is `@kilocode/cli`, but package identity is only a weak local clue.",
+          "url": "https://kilo.ai/docs/code-with-ai/platforms/cli"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant",
+        "router"
+      ],
+      "id": "kilo-code-ide-extension",
+      "indicators": [],
+      "product": "IDE extension",
+      "provider": {
+        "id": "kilo-code",
+        "name": "Kilo Code"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Multi-provider/model selection means underlying provider is not implied by Kilo identity.",
+          "url": "https://github.com/kilo-org/kilocode"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "kong-ai-gateway",
+      "indicators": [],
+      "product": "AI Gateway",
+      "provider": {
+        "id": "kong",
+        "name": "Kong"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Customer-managed gateway host is arbitrary.",
+          "url": "https://docs.konghq.com/gateway/latest/ai-gateway/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cloud",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "local_web_ui",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "librechat-self-hosted-assistant-ui",
+      "indicators": [],
+      "product": "self-hosted assistant UI",
+      "provider": {
+        "id": "librechat",
+        "name": "LibreChat"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Multi-provider setup and self-hosting mean hostname/port are installation-specific.",
+          "url": "https://www.librechat.ai/docs"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "server",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "desktop_app",
+        "inference_server",
+        "local_runner"
+      ],
+      "id": "lm-studio",
+      "indicators": [],
+      "product": "local inference server",
+      "provider": {
+        "id": "lm-studio",
+        "name": "LM Studio"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Server port is configurable and last-used value may persist; do not assume a fixed port.",
+          "url": "https://lmstudio.ai/docs/cli/serve/server-start"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "desktop",
+        "local_runtime"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner",
+        "self_hosted_stack"
+      ],
+      "id": "lmsys-sglang",
+      "indicators": [],
+      "product": "SGLang",
+      "provider": {
+        "id": "lmsys",
+        "name": "LMSYS"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Host/port are deployment settings; no exclusive indicator asserted.",
+          "url": "https://docs.sglang.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_runtime",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "local_web_ui",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "lobehub-lobechat",
+      "indicators": [],
+      "product": "LobeChat",
+      "provider": {
+        "id": "lobehub",
+        "name": "LobeHub"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Supports configurable provider APIs and deployments; no single indicator.",
+          "url": "https://lobehub.com/docs"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "server",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner",
+        "self_hosted_stack"
+      ],
+      "id": "localai",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "container_image",
+          "lifecycle": "current",
+          "limitations": "Image use can be mirrored or retagged; a manifest or local image does not prove that a container is running or being used.",
+          "platforms": [
+            "linux"
+          ],
+          "scope": "LocalAI Docker Hub image repository",
+          "source_id": "source-1",
+          "surfaces": [
+            "local_runtime",
+            "server"
+          ],
+          "value": "localai/localai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "local inference server",
+      "provider": {
+        "id": "localai",
+        "name": "LocalAI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Bind address/port configurable; no fixed process signature is a reliable identity. LocalAI official quick start documents the `localai/localai` container image and its AI runtime role.",
+          "url": "https://localai.io/docs/index.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner",
+        "local_web_ui"
+      ],
+      "id": "lostruins-koboldcpp",
+      "indicators": [],
+      "product": "KoboldCpp",
+      "provider": {
+        "id": "lostruins",
+        "name": "LostRuins"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Portable binary and configurable ports make names/ports weak, bypassable hints.",
+          "url": "https://github.com/LostRuins/koboldcpp"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_runtime",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal"
+      ],
+      "id": "meta-meta-ai",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`meta.ai` exact host; AI features embedded in other Meta apps are separate.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Meta AI product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "meta.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Meta AI",
+      "provider": {
+        "id": "meta",
+        "name": "Meta"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`meta.ai` exact host; AI features embedded in other Meta apps are separate.",
+          "url": "https://www.meta.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "microsoft-azure-ai-foundry-azure-openai",
+      "indicators": [],
+      "product": "Azure AI Foundry / Azure OpenAI",
+      "provider": {
+        "id": "microsoft",
+        "name": "Microsoft"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Customer deployment hostnames vary; avoid broad `azure.com`/`openai.azure.com` assumptions.",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "search_research"
+      ],
+      "id": "microsoft-copilot",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`copilot.microsoft.com` exact host; Copilot is also embedded across Microsoft products.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Microsoft Copilot product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "copilot.microsoft.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Copilot",
+      "provider": {
+        "id": "microsoft",
+        "name": "Microsoft"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`copilot.microsoft.com` exact host; Copilot is also embedded across Microsoft products.",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "browser_extension",
+        "hosted_chat",
+        "search_research"
+      ],
+      "id": "microsoft-copilot-in-edge",
+      "indicators": [],
+      "product": "Copilot in Edge",
+      "provider": {
+        "id": "microsoft",
+        "name": "Microsoft"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Built-in browser feature; no standalone extension ID or exclusive network host asserted.",
+          "url": "https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-copilot-in-microsoft-edge"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "security_tool",
+        "self_hosted_stack"
+      ],
+      "id": "microsoft-pyrit",
+      "indicators": [],
+      "product": "PyRIT",
+      "provider": {
+        "id": "microsoft",
+        "name": "Microsoft"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Red-team framework is provider-configurable; no universal endpoint or process signature.",
+          "url": "https://github.com/Azure/PyRIT"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "python_library"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal"
+      ],
+      "id": "midjourney-midjourney",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`midjourney.com` product surface; third-party clients are not covered.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Midjourney product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "midjourney.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Midjourney",
+      "provider": {
+        "id": "midjourney",
+        "name": "Midjourney"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`midjourney.com` product surface; third-party clients are not covered.",
+          "url": "https://www.midjourney.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "regional_provider"
+      ],
+      "id": "minimax-agent",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`agent.minimax.io` is a current web product host; `chat.minimax.io` redirects to a regional MiniMax Agent host. API and enterprise endpoints are separate.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted MiniMax Agent web product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "agent.minimax.io",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "MiniMax Agent",
+      "provider": {
+        "id": "minimax",
+        "name": "MiniMax"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Current MiniMax Agent web product host. It identifies a service surface, not API use or user intent.",
+          "url": "https://agent.minimax.io/"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "The legacy chat.minimax.io URL redirected to a regional MiniMax Agent host at the check date; regional redirects may vary.",
+          "url": "https://chat.minimax.io/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api",
+        "regional_provider"
+      ],
+      "id": "minimax-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "The current docs describe API bases `api.minimax.io/anthropic` and `api.minimax.io/v1`; account, region, and compatible gateways can still change the route.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented MiniMax API host; the cited API bases include /anthropic and /v1",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.minimax.io",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "API",
+      "provider": {
+        "id": "minimax",
+        "name": "MiniMax"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "The current docs describe API bases `api.minimax.io/anthropic` and `api.minimax.io/v1`; account, region, and compatible gateways can still change the route.",
+          "url": "https://platform.minimax.io/docs/guides/text-generation"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "desktop_app"
+      ],
+      "id": "minimax-code",
+      "indicators": [],
+      "product": "MiniMax Code",
+      "provider": {
+        "id": "minimax",
+        "name": "MiniMax"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Official product material documents MiniMax Code desktop and CLI surfaces, but supplies no stable package or process identifier.",
+          "url": "https://agent.minimax.io/download"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "local_web_ui",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "mintplex-labs-anythingllm",
+      "indicators": [],
+      "product": "AnythingLLM",
+      "provider": {
+        "id": "mintplex-labs",
+        "name": "Mintplex Labs"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Supports local/remote workspaces and providers; deployment endpoint is user-selected.",
+          "url": "https://docs.anythingllm.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "local_web_ui",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "mistral-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "Exact host `api.mistral.ai` documented in quickstart.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Mistral API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.mistral.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "API",
+      "provider": {
+        "id": "mistral-ai",
+        "name": "Mistral AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Exact host `api.mistral.ai` documented in quickstart.",
+          "url": "https://docs.mistral.ai/getting-started/quickstarts/developer/first-api-request"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "search_research"
+      ],
+      "id": "mistral-le-chat",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`chat.mistral.ai` is the product host; this does not identify Vibe Code, API use, or user intent.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Mistral Vibe Chat/Work product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "chat.mistral.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Vibe Chat / Vibe Work (formerly Le Chat)",
+      "provider": {
+        "id": "mistral-ai",
+        "name": "Mistral AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Mistral says Le Chat is now Vibe Chat/Work and retains `chat.mistral.ai`; this hostname does not identify Vibe Code use or user intent.",
+          "url": "https://help.mistral.ai/en/articles/682992-le-chat-is-now-vibe"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "First-party overview distinguishes Vibe Work/Chat from the separate Vibe Code surface.",
+          "url": "https://mistral.ai/products/vibe/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "ide_assistant"
+      ],
+      "id": "mistral-vibe-code",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "medium",
+          "false_positive_risk": "high",
+          "kind": "executable_name",
+          "lifecycle": "current",
+          "limitations": "The short command name is not a stable binary identity, can collide with unrelated programs, and can be renamed or wrapped.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Mistral Vibe CLI command name",
+          "source_id": "source-2",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "vibe",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "pypi",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Package presence does not prove use; source builds, alternate command environments, and configured model endpoints are not represented.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Mistral Vibe PyPI distribution",
+          "source_id": "source-2",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "mistral-vibe",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Vibe Code",
+      "provider": {
+        "id": "mistral-ai",
+        "name": "Mistral AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "First-party docs identify CLI, IDE integrations, and web agent surfaces; no stable package/process identifier is asserted here.",
+          "url": "https://docs.mistral.ai/vibe/code/overview"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Mistral-maintained Vibe repository documents `uv tool install mistral-vibe` and `pip install mistral-vibe`. Mistral Vibe upstream documentation names `vibe` as its interactive and programmatic CLI command.",
+          "url": "https://github.com/mistralai/mistral-vibe"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "ide",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "browser_extension",
+        "hosted_chat",
+        "router"
+      ],
+      "id": "monica-ai-assistant-extension",
+      "indicators": [],
+      "product": "AI assistant extension",
+      "provider": {
+        "id": "monica",
+        "name": "Monica"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Extension can route to multiple providers; exact store/package ID should be collected from official store metadata before registry use.",
+          "url": "https://monica.im/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser_extension",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "search_research"
+      ],
+      "id": "moonshot-ai-kimi",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`kimi.com` exact host for the product; regional and API surfaces may differ.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Kimi product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "kimi.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Kimi",
+      "provider": {
+        "id": "moonshot-ai",
+        "name": "Moonshot AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`kimi.com` exact host for the product; regional and API surfaces may differ.",
+          "url": "https://www.kimi.com/en/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "provider_api",
+        "regional_provider"
+      ],
+      "id": "moonshot-ai-kimi-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "A provider host can receive multiple API operations and compatible clients; contacting it does not identify the model, caller intent, or user-visible product.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Current documented Kimi OpenAI-compatible API hostname",
+          "source_id": "source-2",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.moonshot.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Kimi API",
+      "provider": {
+        "id": "moonshot-ai",
+        "name": "Moonshot AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Provider-specific regional endpoints; use current first-party endpoint table, not a guessed single host.",
+          "url": "https://platform.moonshot.cn/docs"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Moonshot-maintained Kimi Code provider documentation lists `https://api.moonshot.ai/v1` as the Kimi provider base URL.",
+          "url": "https://github.com/MoonshotAI/kimi-code/blob/main/docs/en/configuration/providers.md"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "router"
+      ],
+      "id": "moonshot-ai-kimi-code-cli",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "medium",
+          "false_positive_risk": "high",
+          "kind": "executable_name",
+          "lifecycle": "current",
+          "limitations": "A short command can collide with unrelated tools and is mutable; it does not prove the command is running an AI request.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Kimi Code CLI command name",
+          "source_id": "source-1",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "kimi",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "npm",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Package presence does not prove invocation; official standalone distribution and configurable third-party providers are also supported.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Official Kimi Code CLI npm package",
+          "source_id": "source-1",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "@moonshot-ai/kimi-code",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Kimi Code CLI",
+      "provider": {
+        "id": "moonshot-ai",
+        "name": "Moonshot AI"
+      },
+      "relationships": [
+        {
+          "kind": "integrates_with",
+          "notes": "The CLI documents the Kimi provider and also supports compatible provider configurations.",
+          "target_id": "moonshot-ai-kimi-api"
+        }
+      ],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Moonshot-maintained repository documents the npm package and global installation command for Kimi Code CLI. Kimi Code CLI upstream quick start documents `kimi --version` and launching the `kimi` command.",
+          "url": "https://github.com/MoonshotAI/kimi-code/blob/main/apps/kimi-code/README.md"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner"
+      ],
+      "id": "mozilla-llamafile",
+      "indicators": [],
+      "product": "llamafile",
+      "provider": {
+        "id": "mozilla",
+        "name": "Mozilla"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Single-file distribution can be renamed; no reliable executable basename.",
+          "url": "https://github.com/Mozilla-Ocho/llamafile"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_runtime",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "desktop_app",
+        "inference_server",
+        "local_runner"
+      ],
+      "id": "nomic-gpt4all",
+      "indicators": [],
+      "product": "GPT4All",
+      "provider": {
+        "id": "nomic",
+        "name": "Nomic"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Product can use local and remote models; no stable endpoint or process signature asserted.",
+          "url": "https://docs.gpt4all.io/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "local_runtime"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "novita-ai-inference-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.novita.ai` documented; product endpoints are versioned and task-specific.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Novita API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.novita.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "inference API",
+      "provider": {
+        "id": "novita-ai",
+        "name": "Novita AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.novita.ai` documented; product endpoints are versioned and task-specific.",
+          "url": "https://novita.ai/docs/api-reference/introduction"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "security_tool"
+      ],
+      "id": "nvidia-garak-llm-vulnerability-scanner",
+      "indicators": [],
+      "product": "garak LLM vulnerability scanner",
+      "provider": {
+        "id": "nvidia",
+        "name": "NVIDIA"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Local tool may make requests to selected targets; no default vendor endpoint identifies its use.",
+          "url": "https://github.com/NVIDIA/garak"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "nvidia-nim-inference-microservices",
+      "indicators": [],
+      "product": "NIM inference microservices",
+      "provider": {
+        "id": "nvidia",
+        "name": "NVIDIA"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Hosted and self-hosted deployment endpoints vary; no exclusive hostname asserted.",
+          "url": "https://docs.nvidia.com/nim/large-language-models/latest/introduction.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner",
+        "self_hosted_stack"
+      ],
+      "id": "nvidia-tensorrt-llm",
+      "indicators": [],
+      "product": "TensorRT-LLM",
+      "provider": {
+        "id": "nvidia",
+        "name": "NVIDIA"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Service deployment is operator-configured; no universal process/port indicator.",
+          "url": "https://nvidia.github.io/TensorRT-LLM/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_runtime",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner",
+        "self_hosted_stack"
+      ],
+      "id": "ollama",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "executable_name",
+          "lifecycle": "current",
+          "limitations": "Executable names can be renamed, wrapped, or replaced; running Ollama does not prove model use or session activity.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Ollama CLI executable/command name",
+          "source_id": "source-2",
+          "surfaces": [
+            "local_runtime"
+          ],
+          "value": "ollama",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "unsafe_to_block",
+          "bind_scope": "loopback",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "local_port",
+          "lifecycle": "current",
+          "limitations": "Default `localhost:11434` documented; configurable; detection candidate only.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Ollama default local API listener",
+          "source_id": "source-1",
+          "surfaces": [
+            "local_server"
+          ],
+          "value": "11434",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "local runtime and API",
+      "provider": {
+        "id": "ollama",
+        "name": "Ollama"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Default `localhost:11434` documented; configurable; detection candidate only.",
+          "url": "https://github.com/ollama/ollama/blob/main/docs/api/introduction.mdx"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Ollama CLI reference documents the `ollama serve` and `ollama run` commands.",
+          "url": "https://github.com/ollama/ollama/blob/main/docs/cli.mdx"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "local_runtime"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner",
+        "local_web_ui"
+      ],
+      "id": "oobabooga-text-generation-webui",
+      "indicators": [],
+      "product": "text-generation-webui",
+      "provider": {
+        "id": "oobabooga",
+        "name": "oobabooga"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "API/UI ports and bind settings vary; no fixed default asserted in this ledger.",
+          "url": "https://github.com/oobabooga/text-generation-webui"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_runtime",
+        "local_web_ui",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "local_web_ui",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "open-webui",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "container_image",
+          "lifecycle": "current",
+          "limitations": "Open WebUI can connect to different local or remote providers; the image identifies software distribution, not the selected model or activity.",
+          "platforms": [
+            "linux"
+          ],
+          "scope": "Open WebUI GHCR image repository",
+          "source_id": "source-1",
+          "surfaces": [
+            "local_web_ui",
+            "server"
+          ],
+          "value": "ghcr.io/open-webui/open-webui",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "self-hosted model interface",
+      "provider": {
+        "id": "open-webui",
+        "name": "Open WebUI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Container publish port can differ from app port; configurable provider connections. Open WebUI official quick start documents the GHCR image and describes a self-hosted interface with configurable model/provider connections.",
+          "url": "https://docs.openwebui.com/getting-started/quick-start/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "local_web_ui",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "openai-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "Exact API host `api.openai.com` documented; host does not identify operation/model.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented OpenAI API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.openai.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "API",
+      "provider": {
+        "id": "openai",
+        "name": "OpenAI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Exact API host `api.openai.com` documented; host does not identify operation/model.",
+          "url": "https://platform.openai.com/docs/api-reference/introduction"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal"
+      ],
+      "id": "openai-chatgpt",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`chatgpt.com` exact host; identifies service surface, not user intent.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted ChatGPT web product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "chatgpt.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "ChatGPT",
+      "provider": {
+        "id": "openai",
+        "name": "OpenAI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`chatgpt.com` exact host; identifies service surface, not user intent.",
+          "url": "https://chatgpt.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant"
+      ],
+      "id": "openai-codex-cli",
+      "indicators": [
+        {
+          "actionability": "detection_candidate",
+          "confidence": "high",
+          "ecosystem": "npm",
+          "false_positive_risk": "low",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Package identity indicates distribution, not invocation; custom builds, alternate install channels, and remote execution are outside this value.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Official Codex CLI npm package",
+          "source_id": "source-2",
+          "surfaces": [
+            "cli"
+          ],
+          "value": "@openai/codex",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Codex CLI",
+      "provider": {
+        "id": "openai",
+        "name": "OpenAI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Official source confirms CLI; process name is bypassable and provider endpoints are shared.",
+          "url": "https://github.com/openai/codex"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "OpenAI-maintained packaging script and repository install documentation identify the npm distribution name.",
+          "url": "https://github.com/openai/codex/blob/main/codex-cli/scripts/build_npm_package.py"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "openhands",
+      "indicators": [],
+      "product": "coding agent",
+      "provider": {
+        "id": "openhands",
+        "name": "OpenHands"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Self-hosted or cloud deployment and configurable model providers prevent a universal indicator.",
+          "url": "https://github.com/OpenHands/openhands"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "gateway",
+        "provider_api",
+        "router"
+      ],
+      "id": "openrouter",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`openrouter.ai` exact host; shared gateway path can route to many underlying providers.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted OpenRouter model gateway hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "openrouter.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "model gateway",
+      "provider": {
+        "id": "openrouter",
+        "name": "OpenRouter"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`openrouter.ai` exact host; shared gateway path can route to many underlying providers.",
+          "url": "https://openrouter.ai/docs/api/api-reference/models/get-models"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "browser_extension",
+        "hosted_chat",
+        "multimodal"
+      ],
+      "id": "opera-aria",
+      "indicators": [],
+      "product": "Aria",
+      "provider": {
+        "id": "opera",
+        "name": "Opera"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Built into Opera surfaces; browser application control is the relevant local signal, not a unique process.",
+          "url": "https://www.opera.com/features/aria"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "router",
+        "security_tool"
+      ],
+      "id": "pentestgpt",
+      "indicators": [],
+      "product": "PentestGPT",
+      "provider": {
+        "id": "pentestgpt",
+        "name": "PentestGPT"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "The current official repository describes an AI-powered autonomous penetration-testing/CTF agent and documents current CLI and provider integrations. Existence is observed; this does not establish a stable network or process indicator, or guarantee future maintenance.",
+          "url": "https://github.com/GreyDGL/PentestGPT"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "search_research"
+      ],
+      "id": "perplexity",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`perplexity.ai` exact host for the consumer product; Comet is separate below.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Perplexity consumer product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "perplexity.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Perplexity",
+      "provider": {
+        "id": "perplexity",
+        "name": "Perplexity"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`perplexity.ai` exact host for the consumer product; Comet is separate below.",
+          "url": "https://www.perplexity.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "browser_extension",
+        "hosted_chat",
+        "search_research"
+      ],
+      "id": "perplexity-comet-browser",
+      "indicators": [],
+      "product": "Comet browser",
+      "provider": {
+        "id": "perplexity",
+        "name": "Perplexity"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Browser app surface; using browser presence as an AI-use verdict would be a false positive.",
+          "url": "https://www.perplexity.ai/comet"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "router"
+      ],
+      "id": "poe",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`poe.com` exact host; bots may route to different underlying providers.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Poe product hostname; bots can route to different providers",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "poe.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Poe",
+      "provider": {
+        "id": "quora",
+        "name": "Quora"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`poe.com` exact host; bots may route to different underlying providers.",
+          "url": "https://poe.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "router"
+      ],
+      "id": "portkey-ai-gateway",
+      "indicators": [],
+      "product": "AI Gateway",
+      "provider": {
+        "id": "portkey",
+        "name": "Portkey"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Gateway region/virtual key and self-hosted modes vary; no exclusive network indicator asserted.",
+          "url": "https://docs.portkey.ai/docs/introduction"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "router",
+        "security_tool"
+      ],
+      "id": "promptfoo-red-team-eval-tooling",
+      "indicators": [],
+      "product": "red-team / eval tooling",
+      "provider": {
+        "id": "promptfoo",
+        "name": "Promptfoo"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Supports many model providers and target URLs; configured endpoint is not globally identifiable.",
+          "url": "https://www.promptfoo.dev/docs/red-team/quickstart/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "replicate-model-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.replicate.com` documented; API is general-purpose and supports many models/tasks.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Replicate API hostname for multiple model/task types",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.replicate.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "model API",
+      "provider": {
+        "id": "replicate",
+        "name": "Replicate"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.replicate.com` documented; API is general-purpose and supports many models/tasks.",
+          "url": "https://replicate.com/docs/reference/http"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "desktop_app",
+        "router"
+      ],
+      "id": "replit-replit-agent",
+      "indicators": [],
+      "product": "Replit Agent",
+      "provider": {
+        "id": "replit",
+        "name": "Replit"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Cloud-hosted development environment; local process detection does not cover remote execution.",
+          "url": "https://replit.com/ai"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cloud",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant",
+        "router"
+      ],
+      "id": "roo-code-vs-code-agent",
+      "indicators": [
+        {
+          "actionability": "research_only",
+          "confidence": "high",
+          "false_positive_risk": "low",
+          "kind": "vscode_extension_id",
+          "lifecycle": "archived",
+          "limitations": "The Marketplace notice states the extension shut down on 15 May but omits the year; the identifier is retained as historical provenance, not a current supported product surface.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Archived Roo Code VS Code Marketplace extension identifier",
+          "source_id": "source-2",
+          "surfaces": [
+            "ide"
+          ],
+          "value": "rooveterinaryinc.roo-cline",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "VS Code agent",
+      "provider": {
+        "id": "roo-code",
+        "name": "Roo Code"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Supports multiple API providers and Roo Router; no fixed model host.",
+          "url": "https://docs.roocode.com/getting-started/connecting-api-provider"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "Marketplace listing states the Roo Code extension shut down on 15 May; the notice omits the year. Retain this identifier as historical provenance, not a current installation recommendation.",
+          "url": "https://marketplace.visualstudio.com/items?itemName=rooveterinaryinc.roo-cline"
+        }
+      ],
+      "status": "archived",
+      "surfaces": [
+        "browser_extension",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal"
+      ],
+      "id": "runway-runway",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`runwayml.com` product host; exact service host(s) can change.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Runway product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "runwayml.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Runway",
+      "provider": {
+        "id": "runway",
+        "name": "Runway"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`runwayml.com` product host; exact service host(s) can change.",
+          "url": "https://runwayml.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "desktop",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "sambanova-cloud-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.sambanova.ai` documented for cloud; self-hosted SambaStack URL is operator-defined.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented SambaNova cloud API hostname; self-hosted URLs vary",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.sambanova.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Cloud API",
+      "provider": {
+        "id": "sambanova",
+        "name": "SambaNova"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.sambanova.ai` documented for cloud; self-hosted SambaStack URL is operator-defined.",
+          "url": "https://docs-prod.sambanova.ai/docs/api-reference/endpoints/model-list"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "search_research"
+      ],
+      "id": "scite-ai-assistant",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "url_path",
+          "lifecycle": "current",
+          "limitations": "`scite.ai/assistant` is the product surface; the broader domain also serves search and citation tools, so a domain match does not establish assistant use.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Scite AI Assistant route on a broader research and citation platform",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "https://scite.ai/assistant",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "AI Assistant",
+      "provider": {
+        "id": "scite",
+        "name": "Scite"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`scite.ai/assistant` is the product surface; the broader domain also serves search and citation tools, so a domain match does not establish assistant use.",
+          "url": "https://scite.ai/assistant"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "browser_extension",
+        "hosted_chat",
+        "router"
+      ],
+      "id": "sider-ai-sidebar-browser-extension",
+      "indicators": [],
+      "product": "AI sidebar / browser extension",
+      "provider": {
+        "id": "sider",
+        "name": "Sider"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Multi-model product; do not infer model from extension/vendor identity.",
+          "url": "https://sider.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser_extension",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "provider_api",
+        "regional_provider"
+      ],
+      "id": "siliconflow-openai-compatible-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "Regional hosts `api.siliconflow.cn` / `api.ap.siliconflow.com`; exact region matters.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented SiliconFlow regional API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.ap.siliconflow.com",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "Regional hosts `api.siliconflow.cn` / `api.ap.siliconflow.com`; exact region matters.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented SiliconFlow regional API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.siliconflow.cn",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "OpenAI-compatible API",
+      "provider": {
+        "id": "siliconflow",
+        "name": "SiliconFlow"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Regional hosts `api.siliconflow.cn` / `api.ap.siliconflow.com`; exact region matters.",
+          "url": "https://api-docs.siliconflow.cn/docs/userguide/quickstart"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "cli_agent",
+        "coding_assistant",
+        "ide_assistant"
+      ],
+      "id": "sourcegraph-amp",
+      "indicators": [],
+      "product": "Amp",
+      "provider": {
+        "id": "sourcegraph",
+        "name": "Sourcegraph"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Product spans CLI/editor and uses multiple models; no unique model-provider indicator.",
+          "url": "https://ampcode.com/manual"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cli",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "ide_assistant",
+        "search_research"
+      ],
+      "id": "sourcegraph-cody",
+      "indicators": [],
+      "product": "Cody",
+      "provider": {
+        "id": "sourcegraph",
+        "name": "Sourcegraph"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Providers and deployment options vary; Sourcegraph also provides non-AI code search.",
+          "url": "https://sourcegraph.com/docs/cody"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "ide",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal"
+      ],
+      "id": "suno-suno",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`suno.com` product host; identifies the service, not whether a session-relevant feature was used.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Suno product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "suno.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Suno",
+      "provider": {
+        "id": "suno",
+        "name": "Suno"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`suno.com` product host; identifies the service, not whether a session-relevant feature was used.",
+          "url": "https://suno.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "coding_assistant",
+        "desktop_app",
+        "ide_assistant"
+      ],
+      "id": "tabnine-ai-code-assistant",
+      "indicators": [],
+      "product": "AI code assistant",
+      "provider": {
+        "id": "tabnine",
+        "name": "Tabnine"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Supports third-party model choices and private installations; no exclusive host/process.",
+          "url": "https://docs.tabnine.com/main/welcome/readme/ai-models"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cloud",
+        "desktop",
+        "ide"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "regional_provider"
+      ],
+      "id": "tencent-yuanbao",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`yuanbao.tencent.com` product host; Tencent Cloud APIs are a separate surface.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Tencent Yuanbao product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "yuanbao.tencent.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Yuanbao",
+      "provider": {
+        "id": "tencent",
+        "name": "Tencent"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`yuanbao.tencent.com` product host; Tencent Cloud APIs are a separate surface.",
+          "url": "https://yuanbao.tencent.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "browser_extension",
+        "search_research"
+      ],
+      "id": "the-browser-company-arc-max",
+      "indicators": [],
+      "product": "Arc Max",
+      "provider": {
+        "id": "the-browser-company",
+        "name": "The Browser Company"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Browser-integrated features; Arc browser identity does not prove Max feature use.",
+          "url": "https://arc.net/max"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "browser",
+        "desktop"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "together-ai-inference-api",
+      "indicators": [],
+      "product": "Inference API",
+      "provider": {
+        "id": "together-ai",
+        "name": "Together AI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "API endpoint is documented; customer or compatible proxies may replace it.",
+          "url": "https://docs.together.ai/docs/introduction"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "router",
+        "self_hosted_stack"
+      ],
+      "id": "truefoundry-llm-gateway",
+      "indicators": [],
+      "product": "LLM Gateway",
+      "provider": {
+        "id": "truefoundry",
+        "name": "TrueFoundry"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Tenant deployment endpoints are configurable; no global exclusive hostname.",
+          "url": "https://docs.truefoundry.com/docs/llm-gateway"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "router"
+      ],
+      "id": "venice-venice-chat-agent",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`venice.ai` exact host; product documentation describes model choice and agent routing.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Venice product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "venice.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Venice Chat / Agent",
+      "provider": {
+        "id": "venice",
+        "name": "Venice"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`venice.ai` exact host; product documentation describes model choice and agent routing.",
+          "url": "https://venice.ai/lp/ai-chat"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "gateway",
+        "router"
+      ],
+      "id": "vercel-ai-gateway",
+      "indicators": [],
+      "product": "AI Gateway",
+      "provider": {
+        "id": "vercel",
+        "name": "Vercel"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Account/project-specific gateway configuration; no unique client-side host can safely identify all use.",
+          "url": "https://vercel.com/docs/ai-gateway"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "inference_server",
+        "local_runner",
+        "self_hosted_stack"
+      ],
+      "id": "vllm",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "medium",
+          "false_positive_risk": "medium",
+          "kind": "executable_name",
+          "lifecycle": "current",
+          "limitations": "Executable names can be renamed or wrapped; the command does not identify the model or prove a live inference request.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "vLLM command-line executable name",
+          "source_id": "source-2",
+          "surfaces": [
+            "server"
+          ],
+          "value": "vllm",
+          "verified_on": "2026-10-19"
+        },
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "ecosystem": "pypi",
+          "false_positive_risk": "medium",
+          "kind": "package_name",
+          "lifecycle": "current",
+          "limitations": "Package installation does not prove the server is running; builds, environments, containers, and remote deployments vary.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "vLLM Python distribution name",
+          "source_id": "source-2",
+          "surfaces": [
+            "local_runtime",
+            "server"
+          ],
+          "value": "vllm",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "OpenAI-compatible inference server",
+      "provider": {
+        "id": "vllm",
+        "name": "vLLM"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Deployment port and host are operator-defined; no static default used here.",
+          "url": "https://docs.vllm.ai/en/latest/serving/online_serving/openai_compatible_server/"
+        },
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-2",
+          "indicator_assessment": "vLLM CLI documentation describes the vllm command and its distribution. vLLM CLI documentation names `vllm` and documents `vllm serve` for the OpenAI-compatible server.",
+          "url": "https://docs.vllm.ai/en/latest/cli/index.html"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "server"
+      ]
+    },
+    {
+      "categories": [
+        "multimodal",
+        "provider_api"
+      ],
+      "id": "xai-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.x.ai` is documented; endpoint is not exclusive to a product feature.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented xAI API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.x.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "API",
+      "provider": {
+        "id": "xai",
+        "name": "xAI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.x.ai` is documented; endpoint is not exclusive to a product feature.",
+          "url": "https://docs.x.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "multimodal",
+        "search_research"
+      ],
+      "id": "xai-grok",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`grok.com` exact host for this consumer surface; API is separate.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Grok consumer product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "grok.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Grok",
+      "provider": {
+        "id": "xai",
+        "name": "xAI"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`grok.com` exact host for this consumer surface; API is separate.",
+          "url": "https://grok.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "cloud_marketplace",
+        "security_tool"
+      ],
+      "id": "xbow-autonomous-offensive-security",
+      "indicators": [],
+      "product": "autonomous offensive security",
+      "provider": {
+        "id": "xbow",
+        "name": "XBOW"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "Cloud service; product source establishes category only, not a workstation indicator.",
+          "url": "https://xbow.com/blog/introducing-xbow"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "cloud"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "search_research"
+      ],
+      "id": "you-com-you-com-ai",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "high",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`you.com` exact host; multiple search and agent features share the domain.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "You.com search and AI product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "you.com",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "You.com AI",
+      "provider": {
+        "id": "you-com",
+        "name": "You.com"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`you.com` exact host; multiple search and agent features share the domain.",
+          "url": "https://you.com/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "hosted_chat",
+        "regional_provider"
+      ],
+      "id": "z-ai-chat",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "web_hostname",
+          "lifecycle": "current",
+          "limitations": "`chat.z.ai` product host; no claim that it identifies all Z.ai API use.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Hosted Z.ai Chat product hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "web"
+          ],
+          "value": "chat.z.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "Chat",
+      "provider": {
+        "id": "z-ai",
+        "name": "Z.ai"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`chat.z.ai` product host; no claim that it identifies all Z.ai API use.",
+          "url": "https://chat.z.ai/"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "mobile",
+        "web"
+      ]
+    },
+    {
+      "categories": [
+        "provider_api",
+        "regional_provider"
+      ],
+      "id": "z-ai-glm-api",
+      "indicators": [
+        {
+          "actionability": "advisory",
+          "confidence": "high",
+          "false_positive_risk": "medium",
+          "kind": "api_hostname",
+          "lifecycle": "current",
+          "limitations": "`api.z.ai` documented in API references; compatibility routes can vary.",
+          "platforms": [
+            "unknown"
+          ],
+          "scope": "Documented Z.ai GLM API hostname",
+          "source_id": "source-1",
+          "surfaces": [
+            "api"
+          ],
+          "value": "api.z.ai",
+          "verified_on": "2026-10-19"
+        }
+      ],
+      "product": "GLM API",
+      "provider": {
+        "id": "z-ai",
+        "name": "Z.ai"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "checked_on": "2026-10-19",
+          "id": "source-1",
+          "indicator_assessment": "`api.z.ai` documented in API references; compatibility routes can vary.",
+          "url": "https://docs.z.ai/api-reference/introduction"
+        }
+      ],
+      "status": "observed",
+      "surfaces": [
+        "api",
+        "cloud"
+      ]
+    }
+  ],
+  "last_updated": "2026-10-19",
+  "purpose": "research_only",
+  "registry_version": "0.4.0",
+  "schema_version": 3
+}
