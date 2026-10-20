@@ -8,6 +8,7 @@ on:
       - index.html
       - metadata/**
       - targets/**
+  workflow_dispatch:
 
 permissions: {}
 
