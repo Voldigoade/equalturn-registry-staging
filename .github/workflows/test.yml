@@ -1,0 +1,21 @@
+name: Staging TUF client smoke
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4,10,16,22 * * *'
+
+permissions: {}
+
+jobs:
+  verify-public-repository:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: {}
+    steps:
+      - name: Verify the published TUF repository with the upstream client
+        uses: theupdateframework/tuf-on-ci/actions/test-repository@662382a8295b89a9d538390ce8b9bb85b207a93d # v0.21.0
+        with:
+          compare_source: false
+          expected_artifact: registry-v3.json
